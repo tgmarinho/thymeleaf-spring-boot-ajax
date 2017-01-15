@@ -1,5 +1,5 @@
 # thymeleaf-spring-boot-ajax
-Projeto de Exemplo de Thymleaf / Spring Boot / Ajax
+Projeto de Exemplo de Thymleaf / Spring Boot / Ajax / Internacionalização Básica
 
 Esse projeto foi copiado e adaptado do link: http://xpadro.blogspot.com.br/2014/02/thymeleaf-integration-with-spring-part-2.html?spref=fb
 
@@ -8,6 +8,13 @@ Todo o crédito pertence ao Xpadro (https://github.com/xpadro/)
 Pelo projeto: https://github.com/xpadro/thymeleaf 
 
 Eu apenas atualizei o projeto para Spring Boot / JPA -> Mysql 
+
+Para funcionar basta trocar o spring.jpa.hibernate.ddl-auto=update ##create
+
+ou criar o banco de dados no mysql: thymeleafspring
+
+##create dabase thymeleafspring;
+
 
 Graças ao Spring, essa migração foi muito tranquila!!
 
