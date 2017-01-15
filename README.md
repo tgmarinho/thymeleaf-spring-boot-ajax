@@ -15,4 +15,4 @@ O exemplo funciona perfeitamente, consigo adiconar e pesquisa o convidado pelo s
 
 Melhorias podem ser feitas, mas até aqui me serviu para os projetos que estou trabalhando.
 
-Thank You Very Much xpadro!
+Thank You Very Much Xavier Padro!
