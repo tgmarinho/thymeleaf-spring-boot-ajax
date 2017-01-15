@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+<meta charset="UTF-8"/>
+<title>Thymeleaf Exemplo Com Spring e Ajax</title>
+<link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css" media="screen"/>
+<script th:src="@{/js/functions.js}" type="text/javascript"></script>
+<script th:src="@{/js/jquery-min-1.9.1.js}" type="text/javascript"></script>
+</head>
+
+<body>
+<div style="width:800px; margin:0 auto;">
+
+<h1 th:text="#{home.title}">Thymeleaf Exemplo Com Spring e Ajax</h1>
+
+<div class="generic-info">
+	<h3 th:text="#{hotel.information}">Hotel Information</h3>
+	
+	<span th:text="${hotelData.name}">Hotel name</span><br />
+	<span th:text="${hotelData.address}">Hotel address</span><br />
+</div>
+
+
+<div class="main-block">
+	<!-- Insert new guest -->
+	<span class="subtitle">Formulário para Add Convidados</span>
+	<form id="guestForm" th:action="@{/guests/insert}" th:object="${guest}" method="post">
+		<div class="insertBlock">
+			<span class="formSpan">
+				<input id="guestId" type="text" th:field="*{id}" required="required"/>
+				<br />
+				<label for="guestId" th:text="#{insert.id}">id:</label>
+			</span>
+			<span class="formSpan" style="margin-bottom:20px">
+				<input id="guestName" type="text" th:field="*{name}" required="required"/>
+				<br />
+				<label for="guestName" th:text="#{insert.name}">name:</label>
+			</span>
+			
+			<span class="formSpan">
+				<input id="guestSurname" type="text" th:field="*{surname}" required="required"/>
+				<br />
+				<label for="guestSurname" th:text="#{insert.surname}">surname:</label>
+			</span>
+			<span class="formSpan" style="margin-bottom:20px">
+				<input id="guestCountry" type="text" th:field="*{country}" required="required"/>
+				<br />
+				<label for="guestCountry" th:text="#{insert.country}">country:</label>
+			</span>
+			
+			<input type="submit" value="add" th:value="#{insert.submit}"/>
+			<span class="messageContainer" th:unless="${#strings.isEmpty(errorMessage)}" th:text="#{${errorMessage}}"></span>
+		</div>
+	</form>
+
+	<!-- Guests list -->
+	<form>
+		<span class="subtitle">Guest list form</span>
+		<div class="listBlock">
+			<div class="search-block">
+				<input type="text" id="searchSurname" name="searchSurname"/>
+				<br />
+				<label for="searchSurname" th:text="#{search.label}">Search label:</label>
+				
+				<button id="searchButton" name="searchButton" onclick="retrieveGuests()" type="button" th:text="#{search.button}">Search button</button>
+			</div>
+			
+			<!-- Results block -->
+			<div id="resultsBlock">
+				
+			</div>
+		</div>
+		
+	</form>
+</div>
+
+</div>
+</body>
+</html>
