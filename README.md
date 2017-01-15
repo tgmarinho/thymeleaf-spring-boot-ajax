@@ -16,3 +16,24 @@ O exemplo funciona perfeitamente, consigo adiconar e pesquisa o convidado pelo s
 Melhorias podem ser feitas, mas até aqui me serviu para os projetos que estou trabalhando.
 
 Thank You Very Much Xavier Padro!
+
+
+#ENGLISH VERSION
+
+Thymleaf / Spring Boot / Ajax Sample Project
+
+This project has been copied and adapted from: http://xpadro.blogspot.com.br/2014/02/thymeleaf-integration-with-spring-part-2.html?spref=fb
+
+All credit belongs to Xpadro (https://github.com/xpadro/)
+
+By project: https://github.com/xpadro/thymeleaf
+
+I just upgraded the project to Spring Boot / JPA -> Mysql
+
+Thanks to Spring, this migration was very peaceful !!
+
+The example works perfectly, I can add and search the guest by the surname, if I leave blank I search all.
+
+Improvements can be made, but so far I have served the projects I am working on.
+
+Thank You Very Much Xavier Padro!
