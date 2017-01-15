@@ -9,11 +9,13 @@ Pelo projeto: https://github.com/xpadro/thymeleaf
 
 Eu apenas atualizei o projeto para Spring Boot / JPA -> Mysql 
 
-Para funcionar basta trocar o spring.jpa.hibernate.ddl-auto=update ##create
+Para funcionar basta trocar:
+
+<code>spring.jpa.hibernate.ddl-auto=update ##create</code>
 
 ou criar o banco de dados no mysql: thymeleafspring
 
-##create dabase thymeleafspring;
+<code>create database thymeleafspring;</code>
 
 
 Graças ao Spring, essa migração foi muito tranquila!!
